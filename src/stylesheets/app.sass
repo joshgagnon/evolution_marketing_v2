@@ -1,2 +1,199 @@
-@import normalize
-@import base/mixins
+@import base/_bootstrap-custom
+@import font-awesome
+
+
+$dark-bg: #222
+$light-bg: #fcf9f9
+$light-text: #fcf9f9
+$dark-text: #333
+$mid-bg: #f0f1f1
+$footer-height: 190px
+$border-color: #737272
+$icon-circle: 90px
+$button-bg: #d3d1d1
+$top-bar: 156px
+
+html, body
+    background-color: $mid-bg
+
+html
+    position: relative
+    min-height: 100%
+
+body
+    margin-bottom: $footer-height
+    padding-top: $top-bar
+
+.footer
+    position: absolute
+    bottom: 0
+    width: 100%
+    height: $footer-height
+
+
+
+
+.navbar
+    border: none
+    background-color: $light-bg
+    .top
+        background-color: $dark-bg
+        float: left
+        width: 100%
+
+        .navbar-collapse
+            border: none
+            box-shadow: none
+            overflow-y: hidden
+
+        .navbar-toggle
+            padding: 8px
+            color: $light-text
+            font-size: 1.3em
+            font-weight: lighter
+            text-decoration: none
+            border: none
+            margin: 0
+            width: 100%
+            text-align: center
+            &:hover, &:active, &:focus
+                background-color: $dark-bg
+
+        .nav.navbar-nav
+            width: 100%
+            max-width: 680px
+            margin: 0 auto
+            padding: 0
+            text-align: center
+            float: none
+
+            li
+                list-style: none
+                width: 25%
+                text-align: center
+                padding: 8px
+                a
+                    color: $light-text
+                    font-size: 1.3em
+                    font-weight: lighter
+                    text-decoration: none
+                    width: 100%
+                    display: inline-block
+                    padding: 0
+
+
+    .navbar-collapse.in
+        .nav.navbar-nav
+            li
+                width: 100%
+                &:hover
+                    background-color: $mid-bg
+                    a
+                        color: $dark-text
+
+    .navbar-header
+        width: 100%
+        text-align: center
+        border:none
+
+        img
+            margin: 26px 0
+            max-width: 95%
+
+
+h2
+    text-align: center
+
+
+
+footer
+    background-color: $light-bg
+    padding-top: 20px
+    .icons
+        text-align: center
+
+
+        a
+            font-size: 40px
+            font-weight: bold
+            color: $dark-text
+            background-color: $button-bg
+            border: 2px solid $border-color
+            border-radius: 50%
+            width: $icon-circle
+            height: $icon-circle
+            display: inline-block
+            transition: all 0.3s ease-in
+
+            &:hover
+                background-color: $light-bg
+                -webkit-filter: drop-shadow(0px 0px 8px rgba(100, 100, 100, 0.8));
+            i
+                line-height: $icon-circle
+                margin-top: -3px
+
+
+    .footer-row
+
+
+
+
+        .col-text
+            font-size: 0.8em
+            margin: 20px 0
+            text-align: center
+
+
+
+
+.sea
+    position: relative;
+    padding: 50% 0 0 0;
+    background-color: transparent;
+    background-size: cover
+    background-image: url('/images/sea-50q.jpg');
+    background-position: center 56%;
+    p
+        position: absolute
+        top: 40%
+        left: 1%
+        right: 1%
+        text-align: center
+        letter-spacing: 2px
+        font-size: 1.3em
+        color: white
+        font-weight: 100
+
+    @media (min-width: $screen-sm-min)
+        padding: 30% 0 0 0;
+
+        p
+            font-size: 2em
+            top: 45%
+
+    @media (min-width: $screen-lg-min)
+        p
+            font-size: 2.5em
+            top: 45%
+
+.fb
+    background-color: $dark-bg
+    .fb-container
+        padding: 20px 0
+        max-width: 500px
+        text-align: center
+        margin: 0 auto
+
+
+.text-with-bg
+    background-color: $mid-bg
+
+.text-with-light-bg
+    background-color: $light-bg
+
+.text-row
+    font-size: 1.2em
+    padding: 30px
+    text-align: center
+    i
+        font-size: 3em

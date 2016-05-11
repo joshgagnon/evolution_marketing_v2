@@ -1,3 +1,3 @@
 import './modules'
-
-console.log(`app.js has loaded!`)
+import 'jquery'
+import 'bootstrap-sass/assets/javascripts/bootstrap/collapse.js'

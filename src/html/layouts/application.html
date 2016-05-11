@@ -10,9 +10,61 @@
     {% block head %}{% endblock %}
   </head>
   <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="top">
+              <a href="#"  class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                Menu <i class="fa fa-bars" aria-hidden="true"></i><span class="sr-only">Toggle navigation</span>
+              </a>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">The Team</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+        </div>
+        <div class="navbar-header">
+          <a class="navbar-logo" href="#">
+              <img src="/images/logo.png" />
+          </a>
+        </div>
+    </nav>
+
     {% block content %}{% endblock %}
+      <footer class="footer">
+      <div class="container">
+        <div class="row">
+            <div class="col-xs-4 col-md-2 col-md-offset-3 col-xs-offset-0 icons "></i>
+                <a href="mailto:mail@evolutionlawyers.nz"><i class="fa fa-envelope-o"></i></a>
+            </div>
+            <div class="col-xs-4 col-md-2 icons">
+            <a href="href="tel:0800352993><i class="fa fa-phone"></i></a>
+            </div>
+            <div class="col-xs-4 col-md-2 icons">
+             <a href="https://www.facebook.com/evolutionlawyers" target="_blank"><i class="fa fa-facebook"></i></a>
+            </div>
+        </div>
+        <div class="footer-row">
+         <div class="col-logo">
+           <!-- <img src="/images/favicons/favicon-32x32.png" /> -->
+         </div>
+         <div class="col-text">
+        Evolution Lawyers Limited (NZCN 5709629) is an incorporated law firm under the Lawyers and Conveyancers Act 2006.<br/>
+        Copyright 2015.  All rights reserved.
+      </div>
+      </div>
+    </footer>
     {% block javascript %}
       <script src="javascripts/app.js"></script>
-    {% endblock %}
+      <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+            {% endblock %}
   </body>
 </html>

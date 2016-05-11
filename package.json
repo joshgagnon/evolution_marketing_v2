@@ -80,6 +80,9 @@
   },
   "license": "MIT",
   "dependencies": {
+    "bootstrap-sass": "^3.3.6",
+    "font-awesome": "^4.6.1",
+    "jquery": "^2.2.3",
     "normalize.css": "^4.0.0"
   }
 }

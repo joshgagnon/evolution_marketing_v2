@@ -38,7 +38,9 @@
       "sass": {
         "indentedSyntax": true,
         "includePaths": [
-          "./node_modules/normalize.css"
+          "./node_modules/normalize.css",
+          "./node_modules/bootstrap-sass/assets/stylesheets/",
+          "./node_modules/font-awesome/scss/"
         ]
       },
       "extensions": ["sass", "scss", "css"]
