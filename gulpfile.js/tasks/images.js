@@ -9,11 +9,12 @@ var path        = require('path')
 
 var paths = {
   src: path.join(config.root.src, config.tasks.images.src, '/**/*.{' + config.tasks.images.extensions + '}'),
-  dest: path.join(config.root.dest, config.tasks.images.dest)
+  dest: path.join(config.root.dest, config.tasks.images.dest),
+  skip: path.join(config.root.src, config.tasks.images.skip)
 }
 
 var imagesTask = function() {
-  return gulp.src([paths.src, , '*!README.md'])
+  return gulp.src([paths.src, paths.skip, '*!README.md'])
     .pipe(changed(paths.dest)) // Ignore unchanged files
     .pipe(imagemin()) // Optimize
     .pipe(gulp.dest(paths.dest))

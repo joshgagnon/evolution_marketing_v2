@@ -82,6 +82,7 @@
   "dependencies": {
     "bootstrap-sass": "^3.3.6",
     "font-awesome": "^4.6.1",
+    "gulp-image-resize": "^0.8.0",
     "jquery": "^2.2.3",
     "normalize.css": "^4.0.0"
   }
