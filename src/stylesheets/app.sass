@@ -7,7 +7,7 @@ $light-bg: #fcf9f9
 $light-text: #fcf9f9
 $dark-text: #333
 $mid-bg: #f0f1f1
-$footer-height: 190px
+$footer-height: 210px
 $border-color: #737272
 $icon-circle: 90px
 $button-bg: #d3d1d1
@@ -98,10 +98,11 @@ body
 
         img
             margin: 26px 0
-            max-width: 95%
+            max-width: 80%;
 
 
 h2
+    margin-top: 0
     text-align: center
 
 
@@ -162,7 +163,7 @@ footer
         letter-spacing: 2px
         font-size: 1.3em
         color: white
-        font-weight: 100
+        font-weight: normal
 
     @media (min-width: $screen-sm-min)
         padding: 30% 0 0 0;
@@ -179,6 +180,9 @@ footer
 .fb
     background-color: $dark-bg
     .fb-container
+        h3
+            color: $light-text
+            padding-bottom: 15px
         padding: 20px 0
         max-width: 500px
         text-align: center
@@ -200,6 +204,9 @@ footer
 
 
 .team
+    h2
+        margin-bottom: 0
+        margin-top: 20px
     img
         width: 100%
         height: auto
@@ -225,5 +232,16 @@ footer
 
 .contacts
     text-align: center
-    h3
-        font-weight: 100
+    padding: 30px 0
+
+    h5
+        margin-top: 30px
+        font-size: 17px
+
+    img
+        margin-top: 20px
+
+
+.services
+    h2
+        margin-bottom: 30px
