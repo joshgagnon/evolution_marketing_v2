@@ -4,8 +4,10 @@
 
 $dark-bg: #222
 $light-bg: #fcf9f9
+$vlight-bg: #ffffff
 $light-text: #fcf9f9
 $dark-text: #333
+$mid-text: #777
 $mid-bg: #f0f1f1
 $footer-height: 210px
 $border-color: #737272
@@ -195,6 +197,10 @@ footer
 .text-with-light-bg
     background-color: $light-bg
 
+.text-with-vlight-bg
+    background-color: $vlight-bg
+
+
 .text-row
     font-size: 1.2em
     padding: 30px
@@ -256,10 +262,36 @@ footer
     font-weight: bold
     transition: all 0.3s ease-in
     -webkit-filter: drop-shadow(0px 0px 10px rgba(100, 100, 100, 0.8))
-
+    cursor: pointer
     &:hover
         -webkit-filter: drop-shadow(0px 0px 18px rgba(50, 50, 50, 0.8));
         background-color: white
         text-decoration: none
         color: #000
+
+.house-wrapper
+    text-align: center
+    padding: 0
+    overflow: hidden
+
+.houses
+    width: 100%
+    max-width: 1500px
+
+
+.guide
+    .section
+        margin-bottom: 30px
+    p
+        text-align: justify
+
+.disclaimer
+    color: $mid-text
+    font-size: 0.8em
+    text-align: justify
+    margin-bottom: 50px
+
+.button-container
+    padding-top: 15px
+    text-align: center
 
