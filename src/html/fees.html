@@ -1,0 +1,47 @@
+{#
+  Nunjucks Templating!
+  Homepage: https://mozilla.github.io/nunjucks/
+  Docs: https://mozilla.github.io/nunjucks/api.html
+#}
+
+{% extends 'layouts/application.html' %}
+
+{% block content %}
+
+
+<h2>Fees</h2>
+<div class="container fees">
+
+<div class="links text-row">
+    <a href="/conveyancing_fee_estimates.html" class="link-button">Conveyancing Fee Estimates</a>
+    <a href="/fixed_fee_debt_recovery.html" class="link-button">Fixed Fee Debt Recovery</a>
+</div>
+
+<h3>Standard Hourly Rates</h3>
+<p>
+Our hourly rates are staggered, based on the type of services being provided; not the particular person providing the services.  The rates are divided into three categories, with the hourly rates for each ccategory reflecting the overall level of skill and expertise required for the service being provided.
+</p>
+
+<h4>A. Core Legal Services - $350 per hour</h4>
+<p>
+Original drafting of instruments and claims, writing a legal opinion, providing written legal advice, providing substantive legal advice over the telephone, Skype, or in person,
+appearing in Court, acting in a negotiation or mediation, and attending a meeting at your request.
+</p>
+
+<h4>B. Related Legal Services - $250 per hour</h4>
+<p>
+Reviewing documents and evidence, researching the law, considering application of the law, completing a basic precedent document, and correspondence with you, other
+lawyers, and the Court, including reporting on matter progress, seeking further
+instructions, and following up deadlines and other known requirements.
+</p>
+
+
+<h4>C. Incidental Services - $150 per hour</h4>
+<p>
+Proof-­reading, compiling a bundle of  documents  or  authorities, administering a data room, and general matter management.
+</p>
+</div>
+
+<div class="container-fluid fees-img"></div>
+
+{% endblock %}

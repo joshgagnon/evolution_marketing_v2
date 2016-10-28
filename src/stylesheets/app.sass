@@ -16,7 +16,7 @@ $button-bg: #d3d1d1
 $top-bar: 156px
 
 html, body
-    background-color: $mid-bg
+    background-color: $light-bg
 
 html
     position: relative
@@ -33,11 +33,13 @@ body
     height: $footer-height
 
 
-
+.page
+    background-color: white
 
 .navbar
     border: none
     background-color: $light-bg
+    margin-bottom: 0
     .top
         background-color: $dark-bg
         float: left
@@ -71,7 +73,7 @@ body
 
             li
                 list-style: none
-                width: 20%
+                width: (100% / 6)
                 text-align: center
                 padding: 8px
                 a
@@ -104,10 +106,19 @@ body
 
 
 h2
-    margin-top: 0
     text-align: center
+    color: white
+    background-color: $dark-bg
+    padding: 20px
+    margin: 0
 
+.container-fluid h2
+    background-color: inherit
+    color: $dark-text
+    padding-top: 0;
 
+a
+    color: $dark-text
 
 footer
     background-color: $light-bg
@@ -148,14 +159,31 @@ footer
 
 
 
+.phone-img
+    position: relative;
+    padding: 50% 0 0 0;
+    background-color: transparent;
+    background-size: cover
+    background-image: url('/images/phone-50q.jpg')
+    background-position: center 56%
+
+
+.stag-img
+    position: relative;
+    padding: 50% 0 0 0;
+    background-color: transparent;
+    background-size: cover
+    background-image: url('/images/stag-50q.jpg')
+    background-position: center 100%
 
 .sea
     position: relative;
     padding: 50% 0 0 0;
     background-color: transparent;
     background-size: cover
-    background-image: url('/images/sea-50q.jpg');
-    background-position: center 56%;
+    background-image: url('/images/sea-50q.jpg')
+    background-position: center 56%
+
     p
         position: absolute
         top: 40%
@@ -168,7 +196,7 @@ footer
         font-weight: normal
 
     @media (min-width: $screen-sm-min)
-        padding: 30% 0 0 0;
+        padding: 30% 0 0 0
 
         p
             font-size: 2em
@@ -178,6 +206,8 @@ footer
         p
             font-size: 2.5em
             top: 45%
+
+
 
 .fb
     background-color: $dark-bg
@@ -207,12 +237,11 @@ footer
     text-align: center
     i
         font-size: 3em
+    a
+        text-decoration: underline
 
 
 .team
-    h2
-        margin-bottom: 0
-        margin-top: 20px
     img
         width: 100%
         height: auto
@@ -239,35 +268,60 @@ footer
 
 .contacts
     text-align: center
-    padding: 30px 0
+    padding-top: 20px
+    padding-bottom: 60px
     h5
         margin-top: 30px
         font-size: 17px
+        font-weight: 200
+        a
+            text-decoration: underline;
 
     img
         margin-top: 20px
+        margin-bottom: 20px
+
+
+    h3
+        font-weight: 200
+    .address
+        margin-top: 20px
+        h3
+            margin-top: 0
+            margin-bottom: 0
+
 
 
 .services
     h2
         margin-bottom: 30px
 
-.link-button
-    text-decoration: none
-    display: inline-block
-    margin: 20px
-    padding: 16px 32px
-    background-color:  $light-bg
-    color: $dark-text
-    font-weight: bold
-    transition: all 0.3s ease-in
-    -webkit-filter: drop-shadow(0px 0px 10px rgba(100, 100, 100, 0.8))
-    cursor: pointer
-    &:hover
-        -webkit-filter: drop-shadow(0px 0px 18px rgba(50, 50, 50, 0.8));
-        background-color: white
+.services-img
+    position: relative;
+    padding: 70% 0 0 0;
+    background-color: transparent;
+    background-size: cover
+    background-image: url('/images/tiger-50q.jpg');
+    background-position: center 56%;
+
+.text-row
+    .link-button
         text-decoration: none
-        color: #000
+        display: inline-block
+        margin: 20px
+        padding: 16px 32px
+        background-color:  $light-bg
+        color: $dark-text
+        font-weight: bold
+        transition: all 0.3s ease-in
+        -webkit-filter: drop-shadow(0px 0px 10px rgba(100, 100, 100, 0.8))
+        cursor: pointer
+        &:hover
+            -webkit-filter: drop-shadow(0px 0px 18px rgba(50, 50, 50, 0.8));
+            background-color: white
+            text-decoration: none
+            color: #000
+
 
 .house-wrapper
     text-align: center
@@ -278,12 +332,66 @@ footer
     width: 100%
     max-width: 1500px
 
+.fees
+    h3
+        text-align: center
+        margin: 32px
+    h4
+        margin-top: 32px
+        text-align: center
+
+    p
+        text-align: center
+
+    padding-bottom: 64px
+
+
+    .fee-conditions
+        font-style: italic
+
+    .fee-description
+        font-size: 1.2em
+        padding: 30px 0
+        text-align: center
+        font-weight: 500
+
+.fees-img
+    position: relative;
+    padding: 50% 0 0 0;
+    background-color: transparent;
+    background-size: cover
+    background-image: url('/images/fees-50q.jpg');
+    background-position: center 56%;
 
 .guide
     .section
         margin-bottom: 30px
     p
         text-align: justify
+        font-weight: normal
+        font-size: 14px
+
+    h3
+        margin: 0
+
+    ol ul
+        margin-bottom: 10px
+
+    ol ol > li
+        list-style-type: lower-alpha
+    ul li
+        list-style-type: disc
+    ol > li
+        @extend h4
+        margin-bottom: 30px
+    ul > li
+        font-weight: normal
+        font-size: 14px
+    li
+        margin-bottom: 4px
+        padding-left: .5em
+
+
 
 .disclaimer
     color: $mid-text
